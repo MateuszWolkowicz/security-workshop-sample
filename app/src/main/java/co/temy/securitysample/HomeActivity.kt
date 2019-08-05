@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.view.WindowManager
 import co.temy.securitysample.authentication.AuthenticationDialog
 import co.temy.securitysample.authentication.AuthenticationDialog.Stage.*
 import co.temy.securitysample.authentication.EncryptionServices
@@ -31,6 +32,7 @@ class HomeActivity : BaseSecureActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
         setContentView(R.layout.activity_home)
 
         val secrets = Storage(baseContext).getSecrets()

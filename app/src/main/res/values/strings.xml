@@ -81,5 +81,6 @@
         This app requires to register at least one fingerprint.
         To continue working with this app, please got to Settings and register fingerprint.
     </string>
+    <string name="enter_username_e_mail">Enter username e-mail</string>
 
 </resources>
