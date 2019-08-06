@@ -30,10 +30,10 @@
                 android:id="@+id/userNameView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/enter_username_e_mail"
+                android:hint="@string/enter_user_e_mail"
                 android:imeActionId="5"
                 android:imeOptions="actionNext"
-                android:inputType="textPassword"
+                android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:singleLine="true" />
         </android.support.design.widget.TextInputLayout>
